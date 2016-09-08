@@ -88,10 +88,10 @@
 
 RW: 程序中的已初始化全局变量和静态变量，存储在堆中，因为是变量，所以——READ AND WRITE;       
 
-ZI:   程序中的未初始化的全局变量和静态变量，存储在堆中
+ZI:   程序中的未初始化的全局变量和静态变量，存储在堆中:
 
 
-1234567891011121314151617========================">
+1234567891011121314151617=======================">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ARM 编译产生.map之RO RW ZI">
 <meta property="og:url" content="https://zhizhi25.github.io/untitled-1473256716634.html">
@@ -100,21 +100,21 @@ ZI:   程序中的未初始化的全局变量和静态变量，存储在堆中
 
 RW: 程序中的已初始化全局变量和静态变量，存储在堆中，因为是变量，所以——READ AND WRITE;       
 
-ZI:   程序中的未初始化的全局变量和静态变量，存储在堆中
+ZI:   程序中的未初始化的全局变量和静态变量，存储在堆中:
 
 
-1234567891011121314151617========================">
-<meta property="og:updated_time" content="2016-09-07T14:00:16.000Z">
+1234567891011121314151617=======================">
+<meta property="og:updated_time" content="2016-09-08T04:30:35.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ARM 编译产生.map之RO RW ZI">
 <meta name="twitter:description" content="RO:  程序中的指令和常量，存储在常量和代码区，因为是不能改变的，所以—READ ONLY;      
 
 RW: 程序中的已初始化全局变量和静态变量，存储在堆中，因为是变量，所以——READ AND WRITE;       
 
-ZI:   程序中的未初始化的全局变量和静态变量，存储在堆中
+ZI:   程序中的未初始化的全局变量和静态变量，存储在堆中:
 
 
-1234567891011121314151617========================">
+1234567891011121314151617=======================">
 
 
 
@@ -341,7 +341,7 @@ ZI:   程序中的未初始化的全局变量和静态变量，存储在堆中
 </li>
 <li><p>RW: 程序中的已初始化全局变量和静态变量，存储在堆中，因为是变量，所以——READ AND WRITE;       </p>
 </li>
-<li><p>ZI:   程序中的未初始化的全局变量和静态变量，存储在堆中</p>
+<li><p>ZI:   程序中的未初始化的全局变量和静态变量，存储在堆中:</p>
 </li>
 </ul>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">==============================================================================</div><div class="line"></div><div class="line"></div><div class="line">Code (inc. data)      RO Data      RW Data         ZI Data           Debug</div><div class="line"></div><div class="line"><span class="number">39438</span>    <span class="number">3354</span>        <span class="number">394738</span>       <span class="number">3628</span>              <span class="number">10500</span>             <span class="number">281554</span> Grand Totals</div><div class="line"><span class="number">39438</span>    <span class="number">3354</span>        <span class="number">394738</span>       <span class="number">220</span>                <span class="number">10500</span>             <span class="number">281554</span> ELF Image Totals (compressed)</div><div class="line"><span class="number">39438</span>    <span class="number">3354</span>        <span class="number">394738</span>       <span class="number">220</span>                <span class="number">0</span>                     <span class="number">0</span> ROM Totals</div><div class="line"></div><div class="line">==============================================================================</div><div class="line"></div><div class="line">Total RO Size (Code + RO Data) <span class="number">434176</span> ( <span class="number">424.00</span>kB)</div><div class="line">Total RW Size (RW Data + ZI Data) <span class="number">14128</span> ( <span class="number">13.80</span>kB)</div><div class="line">Total ROM Size (Code + RO Data + RW Data) <span class="number">434396</span> ( <span class="number">424.21</span>kB)</div><div class="line"></div><div class="line">==============================================================================</div></pre></td></tr></table></figure>
